@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
+    <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+        </script>
+    <title>Vivo Clothing</title>
+</head>
+
+<body>
+
+    <div class="header_login">
+        <div class="header content">
+            <div class="logo"><a class="logo-link" href="index.html">VIVO</a></div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item"><a class="menu-item-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="menu-item"><a class="menu-item-link" href="products.html">PRODUCTS</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="menu-item"><a class="menu-item-link" href="#">CONTACT US</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="login.html">LOGIN</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="slider">
+        <img class="slides" src="resources/images/slide1.jpg">
+        <img class="slides" src="resources/images/slide2.jpg">
+        <img class="slides" src="resources/images/slide3.jpg">
+        <img class="slides" src="resources/images/slide4.jpg">
+    </div>
+    <div class="features">
+        <div class="features-contents">
+            <div class="features-items">
+                Latest Trends<br>
+                <img class="features-image" src="https://img.icons8.com/color/96/000000/new.png">
+            </div>
+            <div class="features-items">
+                Cash-on-Delivery<br>
+                <img class="features-image" src="https://img.icons8.com/color/96/000000/cash-in-hand.png">
+            </div>
+            <div class="features-items">
+                Order Tracking<br>
+                <img class="features-image" src="https://img.icons8.com/color/96/000000/track-order.png">
+            </div>
+            <div class="features-items">
+                24/7 Support<br>
+                <img class="features-image" src="https://img.icons8.com/color/96/000000/online-support.png">
+            </div>
+        </div>
+    </div>
+    <div class="categories">
+        <h3 class="categories-heading">Categories</h3>
+        <div class="categories-contents">
+            <div class="categories-items categories-shirts">
+                <img class="categories-image" src="resources/images/sample-1.jpg">
+                <p class="categories-type">Shirts</p><br>
+            </div>
+            <div class="categories-items categories-pants">
+                <img class="categories-image" src="resources/images/sample-2.jpg">
+                <p class="categories-type">Pants</p><br>
+            </div>
+            <div class="categories-items categories-blouses">
+                <img class="categories-image" src="resources/images/sample-3.jpg">
+                <p class="categories-type">Blouses</p><br>
+            </div>
+            <div class="categories-items categories-skirts">
+                <img class="categories-image" src="resources/images/sample-4.png">
+                <p class="categories-type">Skirts</p><br>
+            </div>
+            <div class="categories-items categories-accessories">
+                <img class="categories-image" src="resources/images/sample-5.jpg">
+                <p class="categories-type">Accessories</p><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-contents">
+          <div class="footer-items">
+            <p class="footer-heading">About</p>
+            <div class="footer-links">
+              <p class="footer-link">The Company</p>
+              <p class="footer-link">Terms & Conditions</p>
+            </div>
+          </div>
+          <div class="footer-items">
+            <p class="footer-heading">Categories</p>
+            <div class="footer-links">
+              <p class="footer-link">Face Products</p>
+              <p class="footer-link">Hair care</p>
+              <p class="footer-link">Skin care</p>
+              <p class="footer-link">Beauty Accessories</p>
+              <p class="footer-link">Tool stands</p>
+            </div>
+          </div>
+          <div class="footer-items">
+            <p class="footer-heading">Quick Links</p>
+            <div class="footer-links">
+              <p class="footer-link">Home</p>
+              <p class="footer-link">FAQ</p>
+            </div>
+          </div>
+          <div class="footer-items">
+            <p class="footer-heading">Follow Us</p>
+            <div class="footer-links">
+              <p class="footer-link"><i class="fab fa-facebook"></i> Facebook</p>
+              <p class="footer-link"><i class="fab fa-instagram"></i> Instagram</p>
+              <p class="footer-link"><i class="fab fa-twitter"></i> Twitter</p>
+              <p class="footer-link"><i class="fab fa-youtube"></i> YouTube</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 6000); // Change image every 2 seconds
+        }
+    </script>
+
+
+
+</body>
+
+
+</html>
